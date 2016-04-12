@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include "util.h"
 
+#pragma warning ( disable : 4996 )
+
 static int check_file (char const *, char const *);
 
 char *

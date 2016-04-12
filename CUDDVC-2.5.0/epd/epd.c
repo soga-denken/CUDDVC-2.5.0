@@ -55,6 +55,7 @@
 #include "util.h"
 #include "epd.h"
 
+#pragma warning ( disable : 4996 )
 
 /**Function********************************************************************
 

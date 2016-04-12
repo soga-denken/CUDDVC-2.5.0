@@ -250,7 +250,7 @@ cuddInitInteract(
 	table->errorCode = CUDD_MEMORY_OUT;
 	return(0);
     }
-    for (i = 0; i < words; i++) {
+    for (i = 0; (unsigned long)(i) < words; i++) {
 	interact[i] = 0;
     }
 
@@ -260,11 +260,11 @@ cuddInitInteract(
 	FREE(interact);
 	return(0);
     }
-    for (i = 0; i < n; i++) {
+    for (i = 0; (unsigned long)(i) < n; i++) {
         support[i] = 0;
     }
 
-    for (i = 0; i < n; i++) {
+    for (i = 0; (unsigned long)(i) < n; i++) {
 	nodelist = table->subtables[i].nodelist;
 	slots = table->subtables[i].slots;
 	for (j = 0; j < slots; j++) {
