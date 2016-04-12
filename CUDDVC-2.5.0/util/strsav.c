@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include "util.h"
 
+#pragma warning ( disable : 4996 )
 
 /*
  *  util_strsav -- save a copy of a string

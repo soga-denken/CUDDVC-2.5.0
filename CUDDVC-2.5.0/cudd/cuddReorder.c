@@ -2055,7 +2055,7 @@ ddUpdateMtrTree(
     maxLevel = 0;
     minIndex = -1;
     /* i : level */
-    for (i = treenode->low; i < treenode->low + treenode->size; i++) {
+    for (i = treenode->low; i < (unsigned int)(treenode->low + treenode->size); i++) {
 	index = table->invperm[i];
 	level = perm[index];
 	if (level < minLevel) {
@@ -2113,7 +2113,7 @@ ddCheckPermuation(
     minLevel = table->size;
     maxLevel = 0;
     /* i : level */
-    for (i = treenode->low; i < treenode->low + treenode->size; i++) {
+    for (i = treenode->low; i < (unsigned int)(treenode->low + treenode->size); i++) {
 	index = table->invperm[i];
 	level = perm[index];
 	if (level < minLevel)

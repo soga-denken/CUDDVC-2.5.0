@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include "util.h"
 
+#pragma warning ( disable : 4996 )
 
 /*
  *  util_print_time -- massage a long which represents a time interval in

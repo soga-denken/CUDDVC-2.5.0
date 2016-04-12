@@ -51,6 +51,7 @@
 #ifndef _CUDDINT
 #define _CUDDINT
 
+#pragma warning ( disable : 4996 )
 
 /*---------------------------------------------------------------------------*/
 /* Nested includes                                                           */

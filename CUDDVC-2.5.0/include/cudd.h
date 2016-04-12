@@ -64,6 +64,8 @@
 #include "mtr.h"
 #include "epd.h"
 
+#pragma warning ( disable : 4996 )
+
 #ifdef __cplusplus
 extern "C" {
 #endif

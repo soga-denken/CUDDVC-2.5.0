@@ -51,6 +51,8 @@
 #ifndef _EPD
 #define _EPD
 
+#pragma warning ( disable : 4996 )
+
 #ifdef __cplusplus
 extern "C" {
 #endif
